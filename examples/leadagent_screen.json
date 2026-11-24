@@ -1,0 +1,16 @@
+{
+  "mode": "screen",
+  "voice": "en-IN-PrabhatNeural",
+  "out": "leadagent_screen_demo.mp4",
+  "setup_url": "https://web.whatsapp.com",
+  "steps": [
+    {"tab": "whatsapp", "goto": "https://web.whatsapp.com", "wait": 4,
+     "say": "This is LeadAgent. A customer sends a message on WhatsApp, and the AI assistant replies and saves the lead."},
+    {"tab": "sheet", "goto": "PASTE_GOOGLE_SHEET_URL_HERE", "wait": 4,
+     "say": "The lead lands in Google Sheets automatically. No copy paste."},
+    {"tab": "dashboard", "goto": "https://lead-agent-to63.onrender.com/admin", "wait": 6,
+     "say": "And the owner manages every lead from this dashboard."},
+    {"tab": "whatsapp", "hold": 1,
+     "say": "That is LeadAgent. Capture, organise, follow up. All from WhatsApp."}
+  ]
+}
