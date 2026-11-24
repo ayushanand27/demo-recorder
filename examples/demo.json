@@ -1,0 +1,12 @@
+{
+  "title": "Sample demo",
+  "voice": "en-IN-PrabhatNeural",
+  "out": "sample_demo.mp4",
+  "steps": [
+    {"say": "This is a sample project. Let me open the app.", "goto": "sample_page.html"},
+    {"say": "Now I type an enquiry into the box and press send.", "type": {"selector": "#q", "text": "Need dental appointment tomorrow"}},
+    {"say": "The lead gets saved instantly.", "click": "#go"},
+    {"say": "Scrolling down to show the rest of the page.", "scroll": 800},
+    {"say": "And here is the same project from the command line.", "run": "echo Running tests... && echo 12 passed && echo done"}
+  ]
+}
