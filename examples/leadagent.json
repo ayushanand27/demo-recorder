@@ -1,0 +1,16 @@
+{
+  "viewport": [1920, 1080],
+  "voice": "en-IN-PrabhatNeural",
+  "out": "leadagent_demo.mp4",
+  "steps": [
+    {"goto": "https://lead-agent-to63.onrender.com/admin/login", "wait": 25,
+     "say": "This is LeadAgent. A WhatsApp assistant that helps small businesses in India capture and manage their leads."},
+    {"type": {"selector": "input[name=owner_phone]", "text": "${LEADAGENT_PHONE}"},
+     "say": "The business owner signs in with their WhatsApp number."},
+    {"type": {"selector": "input[name=password]", "text": "${LEADAGENT_PASS}"}, "press": "Enter", "wait": 3,
+     "say": "And a dashboard password. Passwords are hashed, and every form is protected."},
+    {"scroll": 600, "say": "Here are all the leads. Each lead has a status, tags, and a full activity log."},
+    {"scroll": 600, "say": "Owners can search, edit, export to CSV, or sync everything to Google Sheets."},
+    {"hold": 2, "say": "Leads arrive from WhatsApp chats, website forms, or tools like Zapier. The AI agent handles the rest, and asks for a yes before sending anything."}
+  ]
+}
